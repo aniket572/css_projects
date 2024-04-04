@@ -1,0 +1,53 @@
+*{
+    padding: 0px ;
+    margin: 0px;
+}
+.box{
+    margin: auto;
+}
+#ball{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    margin-left: 500px;
+    border-radius: 50%;
+    margin-top: 100px;
+    animation-name: ball;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    position: relative;
+    background-color: rgb(254, 14, 118);
+}
+#box{
+    height: 200px;
+    width: 200px;
+    border: 1px solid;
+    margin-left: 500px;
+    background-color: rgb(11, 134, 171);
+}
+@keyframes ball{
+0%{
+    top: 0px;
+    left: 0px;
+}
+20%{
+    left: -50px;
+    top: 0px;
+}
+40%{
+    top: 250px;
+    left: -50px ;
+}
+60%{
+    top: 250px;
+    left: 20+0px;
+}
+80%{
+    top: 0px;
+    left: 250px;
+}
+100%{
+    top: 0px;
+    left: 0px;
+}
+}

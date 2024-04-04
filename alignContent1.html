@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .parent{
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            margin: 50px auto;
+            background-color: blueviolet;
+            display: flex;
+            text-align: center;
+            flex-flow: wrap row;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            background-color: yellow;
+        }
+        #parent1{
+            align-content: start;
+        }
+        #parent2{
+            align-content: center;
+        }
+        #parent3{
+            align-content: end;
+        }
+        #parent4{
+            align-content:space-around;
+        }
+        #parent5{
+            align-content: space-between;
+        }
+        #parent6{
+            align-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent" id="parent1">
+        <div class="child" id="child1">CHILD1</div>
+        <div class="child" id="child2">CHILD2</div>
+        <div class="child" id="child3">CHILD3</div>
+        <div class="child" id="child4">CHILD4</div>
+        <div class="child" id="child5">CHILD5</div>
+        <div class="child" id="child6">CHILD6</div>
+    </div>
+    <div class="parent" id="parent2">
+        <div class="child" id="child1">CHILD1</div>
+        <div class="child" id="child2">CHILD2</div>
+        <div class="child" id="child3">CHILD3</div>
+        <div class="child" id="child4">CHILD4</div>
+        <div class="child" id="child5">CHILD5</div>
+        <div class="child" id="child6">CHILD6</div>
+    </div>
+    <div class="parent" id="parent3">
+        <div class="child" id="child1">CHILD1</div>
+        <div class="child" id="child2">CHILD2</div>
+        <div class="child" id="child3">CHILD3</div>
+        <div class="child" id="child4">CHILD4</div>
+        <div class="child" id="child5">CHILD5</div>
+        <div class="child" id="child6">CHILD6</div>
+    </div>
+    <div class="parent" id="parent4">
+        <div class="child" id="child1">CHILD1</div>
+        <div class="child" id="child2">CHILD2</div>
+        <div class="child" id="child3">CHILD3</div>
+        <div class="child" id="child4">CHILD4</div>
+        <div class="child" id="child5">CHILD5</div>
+        <div class="child" id="child6">CHILD6</div>
+    </div>
+    <div class="parent" id="parent5">
+        <div class="child" id="child1">CHILD1</div>
+        <div class="child" id="child2">CHILD2</div>
+        <div class="child" id="child3">CHILD3</div>
+        <div class="child" id="child4">CHILD4</div>
+        <div class="child" id="child5">CHILD5</div>
+        <div class="child" id="child6">CHILD6</div>
+    </div>
+    <div class="parent" id="parent6">
+        <div class="child" id="child1">CHILD1</div>
+        <div class="child" id="child2">CHILD2</div>
+        <div class="child" id="child3">CHILD3</div>
+        <div class="child" id="child4">CHILD4</div>
+        <div class="child" id="child5">CHILD5</div>
+        <div class="child" id="child6">CHILD6</div>
+    </div>
+</body>
+</html>

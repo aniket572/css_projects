@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.parent{
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    position: relative;
+    animation-name: slider;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes slider {
+    from{
+        left: 0px;
+        background-color: red;
+    }
+    to{
+        left: 100%;
+        background-color: yellow;
+    }
+}

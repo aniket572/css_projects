@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            background-color: blueviolet;
+            padding: 10px;
+            text-align: center;
+        }
+        .child{
+            background-color: white;
+            padding: 20px;
+        }
+        @media (min-width:50px) and (max-width:500px){
+            .parent{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            background-color: rgb(220, 74, 11);
+            padding: 10px;
+            text-align: center;
+        }
+        .child{
+            background-color: white;
+            padding: 20px;
+        }
+        }
+        @media (min-width:501px) and (max-width:1000px){
+            .parent{
+            display: grid;
+            width: 70%;
+            margin: auto;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: rgb(68, 32, 250);
+            padding: 10px;
+            text-align: center;
+        }
+        .child{
+            background-color: white;
+            padding: 20px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" id="child1">BLOCK1</div>
+        <div class="child" id="child2">BLOCK2</div>
+        <div class="child" id="child3">BLOCK3</div>
+        <div class="child" id="child4">BLOCK4</div>
+        <div class="child" id="child5">BLOCK5</div>
+        <div class="child" id="child6">BLOCK6</div>
+        <div class="child" id="child7">BLOCK7</div>
+        <div class="child" id="child8">BLOCK8</div>
+        <div class="child" id="child9">BLOCK9</div>
+        <div class="child" id="child10">BLOCK10</div>
+        <div class="child" id="child11">BLOCK11</div>
+        <div class="child" id="child12">BLOCK12</div>
+    </div>
+</body>
+</html>

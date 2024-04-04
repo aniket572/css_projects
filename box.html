@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #parent{
+            height: 602px;
+            width: 602px;
+            border: 1px solid;
+            margin: auto;
+            margin-top: 50px;
+
+        }
+        .child{
+            height: 600px;
+            width: 300px;
+            display: inline-block;
+            vertical-align: middle;
+            border: 1px solid;
+        }
+        #child2{
+            margin-left: -5px;
+            border-left: none;
+            background-color: yellow;
+        }
+        #child1{
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child" id="child1"></div>
+        <div class="child" id="child2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, rerum?</div>
+    </div>
+</body>
+</html>

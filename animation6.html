@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        ul{
+            border: none;
+            border-bottom: 5px solid red;
+            margin: 500px auto;
+            width: 800px;
+            /* transform: rotateZ(50deg); */
+            /* perspective: 150px; */
+
+        }
+        ul li{
+            list-style: none;
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            display: inline-block;
+            border-radius: 50%;
+            margin-left: 30px;
+            animation: bounce 2s linear infinite;
+            position: relative;
+        }
+        #box1{
+            background-color: violet;
+        }
+        #box2{
+            background-color: indigo;
+            animation-delay: 500ms;
+        }
+        #box3{
+            background-color: blue;
+        }
+        #box4{
+            background-color: green;
+            animation-delay: 500ms;
+        }
+        #box5{
+            background-color: yellow;
+        }
+        @keyframes bounce {
+            from{
+                translate: 0px 0px;
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to{
+                translate: 0px -250px;
+                transform: rotateX(720deg) rotateY(720deg);
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="box1"></li>
+        <li id="box2"></li>
+        <li id="box3"></li>
+        <li id="box4"></li>
+        <li id="box5"></li>
+    </ul>
+</body>
+</html>

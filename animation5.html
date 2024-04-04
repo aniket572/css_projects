@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100px;
+            width: 150px;
+            background-color: blueviolet;
+            color: white;
+            margin-top: 20px;
+            margin-left: 20px;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            animation-name: slider;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        #box1{
+            animation-timing-function: linear;
+            animation-direction: reverse;
+        }
+        #box2{
+            animation-timing-function: ease;
+            animation-direction: alternate;
+        }
+        #box3{
+            animation-timing-function: ease-in;
+            animation-direction: alternate-reverse;
+        }
+        #box4{
+            animation-timing-function: ease-out;
+        }
+        #box5{
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes slider {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">LINEAR</div>
+    <div class="box" id="box2">EASE</div>
+    <div class="box" id="box3">EASE-IN</div>
+    <div class="box" id="box4">EASE-OUT</div>
+    <div class="box" id="box5">EASE-IN-OUT</div>
+</body>
+</html>

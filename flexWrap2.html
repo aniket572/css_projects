@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrapping</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .parent{
+            height: 500px;
+            width: 400px;
+            border: 1px solid;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: blueviolet;
+
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            text-align: center;
+            margin-top: 10px;
+            background-color: rgb(250, 166, 20);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <dic class="child" id="child1">CHILD1</dic>
+        <dic class="child" id="child2">CHILD2</dic>
+        <dic class="child" id="child3">CHILD3</dic>
+        <dic class="child" id="child4">CHILD4</dic>
+        <dic class="child" id="child5">CHILD5</dic>
+        <dic class="child" id="child6">CHILD6</dic>
+        <dic class="child" id="child7">CHILD7</dic>
+        <dic class="child" id="child8">CHILD8</dic>
+        <dic class="child" id="child9">CHILD9</dic>
+        <dic class="child" id="child10">CHILD10</dic>
+    </div>
+</body>
+</html>

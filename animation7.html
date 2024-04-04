@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: hotpink;
+            margin-top:100px;
+            animation-name: box;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            /* animation-timeline:; */
+            /* animation-composition: ; */
+            position: relative;
+
+        }
+        @keyframes box {
+            from{
+                left: 0px;
+                transform: rotateZ(0deg);
+            }
+            to{
+                left: 100%;
+                transform: rotateZ(180deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
